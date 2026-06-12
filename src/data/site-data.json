@@ -1,0 +1,48 @@
+{
+  "restaurant": {
+    "name": "Grünes Herz",
+    "tagline": "Vegane Köstlichkeiten für alle Sinne",
+    "about": "Willkommen im Grünen Herz, Ihrem veganen und vegetarischen Restaurant in Berlin. Hier legen wir Wert auf frische, saisonale und biologische Zutaten aus der Region. Unser Ziel ist es, Ihnen gesunde und schmackhafte Gerichte zu bieten, die sowohl den Gaumen erfreuen als auch das Wohlbefinden fördern. In unserem hellen und einladenden Ambiente können Sie sich entspannen und die Vielfalt der pflanzlichen Küche genießen. Besuchen Sie uns und erleben Sie, wie köstlich gesundes Essen sein kann!",
+    "phone": "030 6611 3344",
+    "email": "hallo@gruenes-herz.de",
+    "address": "Boxhagener Straße 33, 10245 Berlin",
+    "openingHours": {
+      "Montag": "08:30-16:00",
+      "Dienstag": "08:30-16:00",
+      "Mittwoch": "08:30-16:00",
+      "Donnerstag": "08:30-16:00",
+      "Freitag": "08:30-16:00",
+      "Samstag": "08:30-16:00",
+      "Sonntag": "08:30-16:00"
+    },
+    "cuisine": "Vegane und vegetarische Küche",
+    "priceRange": "mid"
+  },
+  "seo": {
+    "title": "Grünes Herz - Vegane und Vegetarische Küche in Berlin",
+    "description": "Entdecken Sie das Grüne Herz in Berlin. Vegane und vegetarische Gerichte, frisch und gesund zubereitet. Besuchen Sie uns!"
+  },
+  "content": {
+    "welcomeHeading": "Herzlich Willkommen im Grünen Herz",
+    "welcomeSubtext": "Genießen Sie unsere köstlichen veganen und vegetarischen Speisen.",
+    "reservationCta": "Jetzt Tisch reservieren",
+    "orderCta": "Bestellen Sie online",
+    "contactHeading": "Kontaktieren Sie uns",
+    "footerText": "Besuchen Sie uns in Berlin-Friedrichshain!"
+  },
+  "images": {
+    "food": "/images/food_2.webp",
+    "interior": "/images/interior_3.webp",
+    "hero": "/images/hero_generated.webp"
+  },
+  "features": {
+    "hasReservation": false,
+    "hasOrdering": false,
+    "paypalClientId": ""
+  },
+  "menu": [],
+  "legal": {
+    "impressum": "## Impressum\n\n**Angaben gemäß § 5 TMG**\n\nGrünes Herz\nBoxhagener Straße 33, 10245 Berlin\n030 6611 3344\nhallo@gruenes-herz.de\n\n**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**\nGrünes Herz\n\n**Haftungsausschluss:**\nDie Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.\n\n**Urheberrecht:**\nDie durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.\n",
+    "datenschutz": "## Datenschutzerklärung\n\n**1. Datenschutz auf einen Blick**\n\nDiese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf unserer Website auf.\n\n**2. Verantwortliche Stelle**\n\nGrünes Herz\nBoxhagener Straße 33, 10245 Berlin\nE-Mail: hallo@gruenes-herz.de\n\n**3. Erhebung und Speicherung personenbezogener Daten**\n\nBeim Besuch unserer Website werden automatisch Informationen allgemeiner Natur erfasst (Server-Log-Dateien). Diese Daten erlauben keine Rückschlüsse auf Ihre Person.\n\n**4. Kontaktformular**\n\nWenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.\n\n**5. Cookies**\n\nUnsere Website verwendet Cookies. Durch die Nutzung unserer Website erklären Sie sich damit einverstanden.\n\n**6. Ihre Rechte**\n\nSie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer gespeicherten personenbezogenen Daten.\n\n**7. Kontakt Datenschutzbeauftragter**\n\nBei Fragen zum Datenschutz wenden Sie sich an: hallo@gruenes-herz.de\n"
+  }
+}
