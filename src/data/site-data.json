@@ -23,16 +23,16 @@
     "description": "Entdecken Sie das Grüne Herz in Berlin. Vegane und vegetarische Gerichte, frisch und gesund zubereitet. Besuchen Sie uns!"
   },
   "content": {
-    "welcomeHeading": "Herzlich Willkommen im Grünen Herz",
-    "welcomeSubtext": "Genießen Sie unsere köstlichen veganen und vegetarischen Speisen.",
-    "reservationCta": "Jetzt Tisch reservieren",
-    "orderCta": "Bestellen Sie online",
-    "contactHeading": "Kontaktieren Sie uns",
-    "footerText": "Besuchen Sie uns in Berlin-Friedrichshain!"
+    "welcomeHeading": "",
+    "welcomeSubtext": "",
+    "reservationCta": "Tisch reservieren",
+    "orderCta": "Jetzt bestellen",
+    "contactHeading": "Kontakt",
+    "footerText": ""
   },
   "images": {
     "food": "/images/food_2.webp",
-    "interior": "/images/interior_3.webp",
+    "interior": "/images/interior_4.webp",
     "hero": "/images/hero_generated.webp"
   },
   "features": {
