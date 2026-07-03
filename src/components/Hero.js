@@ -24,48 +24,76 @@ export default async function Hero() {
   const overrides = await getImageOverrides();
   const images = { ...defaultImages, ...overrides };
 
-  return (
-    <section className="border-b border-coffee/10">
-      <div className="mx-auto grid min-h-[80vh] max-w-6xl items-center gap-12 px-4 py-16 md:grid-cols-2">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-terra">
-            {restaurant.cuisine || restaurant.tagline}
-          </p>
-          <h1 className="mt-4 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
-            {content.welcomeHeading || restaurant.name}
-          </h1>
-          {content.welcomeSubtext && (
-            <p className="mt-6 max-w-md text-lg leading-relaxed text-coffee/70">
-              {content.welcomeSubtext}
-            </p>
-          )}
-          <div className="mt-10 flex items-center gap-6">
-            <a
-              href="#speisekarte"
-              className="bg-coffee px-8 py-4 text-sm font-semibold uppercase tracking-wider text-cream transition-colors hover:bg-terra"
-            >
-              Zur Speisekarte
-            </a>
-            <a href="#kontakt" className="text-sm font-semibold underline underline-offset-4 hover:text-terra">
-              Kontakt
-            </a>
-          </div>
-        </div>
+  const chips = [restaurant.cuisine, restaurant.tagline, restaurant.city].filter(Boolean);
 
-        {images.hero ? (
+  return (
+    <section className="relative flex min-h-screen items-end overflow-hidden">
+      {images.hero ? (
+        <>
           <img
             src={images.hero}
             alt={restaurant.name}
-            className="h-[60vh] w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ animation: "heroZoom 16s ease-out forwards" }}
           />
-        ) : (
-          <div className="flex h-[60vh] w-full items-center justify-center bg-sand">
-            <span className="font-display text-8xl font-bold text-coffee/10">
-              {restaurant.name.charAt(0)}
-            </span>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10" />
+        </>
+      ) : (
+        <div className="absolute inset-0 bg-gradient-to-br from-coffee via-terradark to-terra" />
+      )}
+
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-24 pt-40">
+        {chips.length > 0 && (
+          <div className="flex flex-wrap gap-2" style={{ animation: "fadeUp 0.9s ease-out both" }}>
+            {chips.map((chip) => (
+              <span
+                key={chip}
+                className="rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm"
+              >
+                {chip}
+              </span>
+            ))}
           </div>
         )}
+
+        <h1
+          className="mt-6 max-w-4xl font-display text-6xl font-bold leading-[0.95] text-white sm:text-8xl"
+          style={{ animation: "fadeUp 0.9s ease-out 0.15s both" }}
+        >
+          {content.welcomeHeading || restaurant.name}
+        </h1>
+
+        {content.welcomeSubtext && (
+          <p
+            className="mt-6 max-w-xl text-xl leading-relaxed text-white/80"
+            style={{ animation: "fadeUp 0.9s ease-out 0.3s both" }}
+          >
+            {content.welcomeSubtext}
+          </p>
+        )}
+
+        <div
+          className="mt-10 flex flex-wrap items-center gap-6"
+          style={{ animation: "fadeUp 0.9s ease-out 0.45s both" }}
+        >
+          <a
+            href="#speisekarte"
+            className="group inline-flex items-center gap-3 bg-terra px-10 py-4 text-sm font-bold uppercase tracking-widest text-white shadow-xl shadow-terra/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-terradark"
+          >
+            Speisekarte entdecken
+            <span className="transition-transform duration-300 group-hover:translate-x-1.5">→</span>
+          </a>
+          <a
+            href="#kontakt"
+            className="text-sm font-bold uppercase tracking-widest text-white/80 underline decoration-white/40 underline-offset-8 transition-colors hover:text-white hover:decoration-terra"
+          >
+            Kontakt
+          </a>
+        </div>
       </div>
+
+      {/* İnce scroll göstergesi */}
+      <div className="absolute bottom-0 left-1/2 z-10 h-16 w-px -translate-x-1/2 bg-gradient-to-b from-transparent to-white/60" />
     </section>
   );
 }

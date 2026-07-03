@@ -1,5 +1,6 @@
 import { Quicksand, Nunito } from "next/font/google";
 import "./globals.css";
+import ScrollReveal from "../components/ScrollReveal";
 import siteData from "../data/site-data.json";
 
 const displayFont = Quicksand({
@@ -20,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de" className={`${displayFont.variable} ${bodyFont.variable}`}>
-      <body>{children}</body>
+      <body><ScrollReveal />{children}</body>
     </html>
   );
 }
